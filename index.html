@@ -7,16 +7,26 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    
     <div class="container">
         <div class="wrapper">
+            <form class="add-product-form">
+                <input id="product-img" type="url" placeholder=" Url new product image" required>
+                <input id="product-title" type="text" placeholder=" New product's  name" required>
+                <input id="product-description" type="text" placeholder="  New product's description" required>
+                <input id="product-price" type="text" placeholder=" New product's price" required>
+                <input id="product-discount" type="text" placeholder=" New product's discount" required>
+                <button id="foem-btn" type="submit">Submit</button>
+            </form>
             <div class="products-header">
                 <h1 class="product-title">Products</h1>
             </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    
+                  <div class="swiper-slide"><img src="https://podacha-blud.com/uploads/posts/2022-10/1665578684_25-podacha-blud-com-p-fud-fotografii-kartinki-26.jpg" alt="food"></div>
+                  <div class="swiper-slide"><img src="https://w.forfun.com/fetch/62/6264be113319d0b953ca6a0b4bbaa49d.jpeg" alt="food"></div>
+                  <div class="swiper-slide"><img src="https://w.forfun.com/fetch/da/dab0f40779a0c29a75ef519ed0f35d8b.jpeg" alt="food"></div>
                 </div>
-                <div class="swiper-pagination"></div>
                 <div class="autoplay-progress">
                   <svg viewBox="0 0 48 48">
                     <circle cx="24" cy="24" r="20"></circle>

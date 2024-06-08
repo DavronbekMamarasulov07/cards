@@ -10,6 +10,9 @@ a {
 }
 
 
+
+
+
 .container {
     max-width: 1300px;
     margin: 0 auto;
@@ -20,8 +23,9 @@ a {
 
 
 #product-card-list {
-    margin-top: 100px;
     width: 100%;
+    margin-top: 100px;
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
@@ -84,20 +88,66 @@ a {
     font-weight: 700;
 }
 
+.add-product-form{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    
+}
+
+.add-product-form input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px transparent;
+    border: 1px solid orange;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.add-product-form input:hover{
+    box-shadow: 0px 0px 5px orange;
+    border: 1px solid transparent;
+
+}
+
+.add-product-form  button{
+    font-size: 16px;
+    padding: 7px 30px;
+    border: none;
+    background-color: orange;
+    box-shadow: 0px 0px 10px transparent;
+    color: #fff;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.add-prouct-form button:hover{
+    box-shadow: 0px 0px 10px orange;
+}
+
+.add-prouct-form button:active{
+    transform: scale(0.95);
+}
+
 /* carusel */
 
 
 .wrapper {
+    margin-top: 100px;
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .mySwiper {
+    margin-top: 50px;
     border-radius: 20px;
-    margin-top: 150px;
     width: 100%;
     max-width: 1300px;
     position: relative;
@@ -124,7 +174,7 @@ a {
 
 .swiper-slide img{
     width: 1300px;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 
