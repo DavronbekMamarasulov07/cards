@@ -9,10 +9,6 @@ a {
     text-decoration: none;
 }
 
-
-
-
-
 .container {
     max-width: 1300px;
     margin: 0 auto;
@@ -25,7 +21,6 @@ a {
 #product-card-list {
     width: 100%;
     margin-top: 100px;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
@@ -43,10 +38,11 @@ a {
     justify-content: space-between;
     gap: 10px;
     min-height: 500px;
+    width: 100%;
 }
 
 .product-card img {
-    width: 100%;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
@@ -88,16 +84,18 @@ a {
     font-weight: 700;
 }
 
-.add-product-form{
-    margin-top: 50px;
+.btn-items{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    display: flex;
-    
+    gap: 10px;
 }
 
-.add-product-form input{
+
+
+.form input{
     padding: 10px;
     outline: none;
     border: none;
@@ -107,13 +105,13 @@ a {
     font-size: 14px;
 }
 
-.add-product-form input:hover{
+.form input:hover{
     box-shadow: 0px 0px 5px orange;
     border: 1px solid transparent;
 
 }
 
-.add-product-form  button{
+.form  button{
     font-size: 16px;
     padding: 7px 30px;
     border: none;
@@ -124,19 +122,66 @@ a {
     transition: .2s;
 }
 
-.add-prouct-form button:hover{
+.form button:hover{
     box-shadow: 0px 0px 10px orange;
 }
 
-.add-prouct-form button:active{
+.form button:active{
     transform: scale(0.95);
 }
+
+
+.update-product-form{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    transition: .4s;
+    position: absolute;
+    top: -100%;
+}
+
+.add-product-form{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: .4s;
+    display: flex;
+    position: absolute;
+    top: -100%;
+}
+
+.btn{
+    padding: 6px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px orange;
+    background-color: rgba(246, 162, 4, 0.7);
+    color: #000000;
+    transition: .3s;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.show{
+    top: 0;
+}
+
+.shrink{
+    top: -100%;
+}
+
 
 /* carusel */
 
 
 .wrapper {
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
     position: relative;
     display: flex;
@@ -153,6 +198,7 @@ a {
     position: relative;
     overflow: hidden;
     display: flex;
+    transition: .3s;
 
 }
 
@@ -162,6 +208,9 @@ a {
     width: 100%;
 }
 
+.top{
+   margin-top: 150px;
+}
 
 
 .swiper-slide {
