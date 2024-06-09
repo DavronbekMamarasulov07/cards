@@ -136,10 +136,9 @@ a {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    display: flex;
     transition: .4s;
-    position: absolute;
-    top: -100%;
+    height: 0px;
+    display: none;
 }
 
 .add-product-form{
@@ -148,9 +147,8 @@ a {
     justify-content: center;
     gap: 20px;
     transition: .4s;
-    display: flex;
-    position: absolute;
-    top: -100%;
+    height: 0px;
+    display: none;
 }
 
 .btn{
@@ -169,12 +167,17 @@ a {
 }
 
 .show{
-    top: 0;
+    height: 100px;
+    
 }
 
-.shrink{
-    top: -100%;
+.showDisplay{
+    display: flex;
 }
+
+
+
+
 
 
 /* carusel */

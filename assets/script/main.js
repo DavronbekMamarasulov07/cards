@@ -7,15 +7,19 @@ const $swipper = document.querySelector(".swiper")
 
 
 $addProductBtn.addEventListener("click", () => {
+    $updateForm.classList.remove("show")
+    $updateForm.classList.remove("showDisplay")
+
     $addForm.classList.toggle("show")
-    $updateForm.classList.toggle("shrink")
-    $swipper.classList.toggle("top")
+    $addForm.classList.toggle("showDisplay")
 })
 
 $updateProductBtn.addEventListener("click" ,() => {
+    $addForm.classList.remove("show")
+    $addForm.classList.remove("showDisplay")
     $updateForm.classList.toggle("show")
-    $addForm.classList.toggle("shrink")
-    $swipper.classList.toggle("top")
+    $updateForm.classList.toggle("showDisplay")
+
 })
 
 
